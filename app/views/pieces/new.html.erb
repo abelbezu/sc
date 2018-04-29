@@ -1,0 +1,13 @@
+<h1>This is a form</h1>
+
+<%= form_for @piece do |f| %>
+  Piece:
+  <ul>
+    <%= f.text_field :title %>
+    <%= f.fields_for :paragraphs do |piece_form| %>
+      <li>
+        <%= piece_form.text_area :body %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>

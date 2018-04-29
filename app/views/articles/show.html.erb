@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-2">
+    </div>
+    <div class="col-md-8">
+      <div class="piece-container">
+        <h2> <%= @article.piece.title%> </h2>
+       
+          <p>
+            <%= @article.piece.body.html_safe %>
+          </p>
+      </div>
+
+      <div class="comment-container">
+        <%= render partial: "comments/comment_form"%>
+      </div>
+    </div>
+    <div class="col-md-2">
+    </div>
+  </div>
+</div>

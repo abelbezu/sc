@@ -1,0 +1,23 @@
+<div class="row">
+  <div class="col-md-3">
+    
+  </div>
+  <div class="col-md-6">
+    <div>
+      <% if @question.piece %>
+        <h5><%= @question.piece.title%></h5>
+        <p><%= @question.piece.body.html_safe%></p>
+      <% end %> 
+    </div>
+
+    <div>
+      <%= form_with(model: @comment) do |comment_form|%>
+        <%= comment_form.text_area(:body, class: "form-control") %>
+        <%= comment_form.submit %>
+      <% end %>
+    </div>
+  </div>
+  <div class="col-md-3">
+    
+  </div>
+</div>

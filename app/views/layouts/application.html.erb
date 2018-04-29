@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Scholar</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag('application', media: 'all', 'data-turbolinks-track': 'reload') %>  
+    <%= stylesheet_link_tag('bootstrap/dist/css/bootstrap.css', media: 'all', 'data-turbolinks-track': 'reload') %>
+    <%= stylesheet_link_tag("http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css") %>
+
+
+    <%= stylesheet_link_tag('medium-editor/dist/css/medium-editor.css')%>
+    <%= stylesheet_link_tag("medium-editor/dist/css/themes/default.css") %>
+    <%= stylesheet_link_tag("medium-editor-insert-plugin/dist/css/medium-editor-insert-plugin.min.css") %>
+
+    <%= javascript_include_tag("jquery/dist/jquery.min.js")%>
+    <%= javascript_include_tag("https://cdnjs.cloudflare.com/ajax/libs/jquery-sortable/0.9.13/jquery-sortable-min.js") %>    
+    
+    <%= javascript_include_tag("handlebars/handlebars.runtime.min.js") %>
+    <%= javascript_include_tag("blueimp-file-upload/js/vendor/jquery.ui.widget.js") %>
+    <%= javascript_include_tag("blueimp-file-upload/js/jquery.iframe-transport.js") %>
+    <%= javascript_include_tag("blueimp-file-upload/js/jquery.fileupload.js") %>
+    <%= javascript_include_tag("medium-editor/dist/js/medium-editor.js") %>
+    <%= javascript_include_tag("medium-editor-insert-plugin/dist/js/medium-editor-insert-plugin.min.js") %>
+
+    <%= javascript_include_tag('application', 'data-turbolinks-track': 'reload') %>
+  </head>
+
+  <body>
+    <%= render(partial: "partials/navbar")%>
+    <div class="container">
+       <%= yield %>
+    </div>
+  </body>
+</html>
