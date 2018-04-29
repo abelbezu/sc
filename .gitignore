@@ -28,3 +28,6 @@ bower_components
 /node_modules
 yarn-debug.log*
 .yarn-integrity
+
+# Ignore my personal notes
+notes.txt
