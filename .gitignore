@@ -29,5 +29,5 @@ bower_components
 yarn-debug.log*
 .yarn-integrity
 
-# Ignore my personal notes
+# Ignore notes
 notes.txt
